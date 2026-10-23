@@ -1,0 +1,28 @@
+[
+ {
+  "shape": "Workbench",
+  "theme": "furrow",
+  "axes": "light/grotesk-sans/warm",
+  "hero": "Index",
+  "nav": "floating pill",
+  "footer": "statement",
+  "imagery": "screenshots 3 (headless Chrome)",
+  "photos": [],
+  "entry": "CVCite marketing page",
+  "fingerprint": "workbench-index-pill-statement",
+  "sections": [
+   "Index hero",
+   "Showcase",
+   "Split",
+   "Rows",
+   "Table",
+   "Band",
+   "Footer"
+  ],
+  "signature": "the demo six verdicts as a ruled record",
+  "waived": [],
+  "prompt": "Marketing site for CVCite by GovernedAI",
+  "date": "2026-10-23",
+  "mode": "build"
+ }
+]

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CVCite by GovernedAI: every RFP criterion, cited from the CV</title>
+<meta name="description" content="CVCite checks a consultant's CV against an RFP's criteria, cites the evidence for each one and flags every gap.">
+<link rel="alternate" hreflang="fr" href="/fr/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&family=Red+Hat+Text:wght@400;500&family=Red+Hat+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <nav class="nav__pill" aria-label="Main">
+    <a class="wordmark" href="/" aria-label="GovernedAI home">GovernedAI <span>CVCite</span></a>
+    <ul class="nav__links">
+      <li><a href="/cvcite/sample-grid/">Sample grid</a></li>
+      <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+      <li><a class="btn" href="mailto:steph@governedai.ca?subject=CVCite%20free%20match">Ask for a free match</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div>
+        <h1 id="hero-title">Every criterion, cited from the CV.</h1>
+        <p class="lead">CVCite checks a consultant’s CV against an RFP and flags every gap.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="mailto:steph@governedai.ca?subject=CVCite%20free%20match">Ask for a free match</a>
+          <a class="btn" href="/cvcite/sample-grid/">Open the sample grid</a>
+        </div>
+      </div>
+
+      <figure class="sheet" aria-labelledby="sheet-title">
+        <div class="sheet__head">
+          <h2 id="sheet-title">Six mandatory criteria, one CV</h2>
+          <p><span class="num">18.1</span>&nbsp;s</p>
+        </div>
+        <table class="verdicts">
+          <thead><tr><th scope="col">Criterion</th><th scope="col">Asks for</th><th scope="col">Verdict</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+            <tr><td class="id">M01</td><td class="what">Two proposed resources</td><td><span class="chip chip--not">Unsupported</span></td><td>about the bid, not the CV</td></tr>
+            <tr><td class="id">M02</td><td class="what">A law degree and a translation degree</td><td><span class="chip chip--gap">Gap</span></td><td>a certificate, not a degree</td></tr>
+            <tr><td class="id">M03</td><td class="what">Attestation or transcripts</td><td><span class="chip chip--gap">Gap</span></td><td>attach before bidding</td></tr>
+            <tr><td class="id">M04</td><td class="what">Five years of translation</td><td><span class="chip chip--met">Supported</span></td><td><span class="num">6</span> cited lines</td></tr>
+            <tr><td class="id">M05</td><td class="what">Land claims terminology</td><td><span class="chip chip--met">Supported</span></td><td><span class="num">3</span> cited lines</td></tr>
+            <tr><td class="id">M06</td><td class="what">A signed Annex G</td><td><span class="chip chip--not">Unsupported</span></td><td>a form to sign</td></tr>
+          </tbody>
+        </table>
+        <figcaption class="sheet__foot">A fictional consultant we wrote, against CanadaBuys notice <span class="num">1000190326</span>. <a href="/cvcite/sample-grid/">The full grid</a>.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cited-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="cited-title">Every sentence points to its line</h2>
+        <p class="lead">Answers use only the CV’s own passages, each one numbered and quoted.</p>
+      </div>
+      <figure class="capture">
+        <div class="capture__frame" data-kind="product">
+          <img src="/images/screens/grid-case.png" width="1385" height="425" loading="lazy"
+               alt="Sample grid row M04, marked Supported: three drafted sentences with numbered citations, six quoted CV passages, and each requirement ticked against the paragraphs that show it.">
+        </div>
+        <figcaption>M04 in the sample grid: six quoted passages behind three sentences.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="gaps-title">
+    <div class="container split">
+      <div>
+        <h2 id="gaps-title">Gaps you can fix before bidding</h2>
+        <ul class="todo">
+          <li><b>A translation degree</b><span>the CV shows a certificate</span></li>
+          <li><b>Attestation or transcripts</b><span>attach to the bid</span></li>
+          <li><b>A signed Annex G</b><span>complete the form</span></li>
+        </ul>
+      </div>
+      <figure class="capture">
+        <div class="capture__frame" data-kind="product">
+          <img src="/images/screens/grid-gaps.png" width="750" height="165" loading="lazy"
+               alt="Sample grid row M02: the record does not show a translation degree; the law degree is shown by paragraph 20; two boilerplate phrases are listed as not checked.">
+        </div>
+        <figcaption>M02: the reason, then each requirement and its paragraph.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="how-title">How a verdict is reached</h2>
+        <p class="lead">The model reads. Code applies the rules.</p>
+      </div>
+      <ul class="rows">
+        <li><h3>The criteria, word for word</h3><p>Each criterion is copied from the RFP and checked against its page.</p></li>
+        <li><h3>A search for every part</h3><p>A criterion that lists several things gets a search for each.</p></li>
+        <li><h3>Shown, or a gap</h3><p>A requirement counts only when a CV passage states it or the work it describes proves it.</p></li>
+        <li><h3>Every sentence checked</h3><p>bearout tests each sentence against its passage; a failure is rewritten once or removed.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="refuse-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="refuse-title">What it will not do</h2>
+        <p class="lead">Where a tool would guess, the grid names the gap.</p>
+      </div>
+      <table class="refuse">
+        <thead><tr><th scope="col">It will not</th><th scope="col">You see instead</th></tr></thead>
+        <tbody>
+          <tr><td>State experience the CV does not show</td><td>Unsupported, with the reason</td></tr>
+          <tr><td>Count a certificate as a degree</td><td>A gap that names the credential</td></tr>
+          <tr><td>Hide a sentence it removed</td><td>The sentence, its passage and the rewrite it tried</td></tr>
+          <tr><td>Score boilerplate as a requirement</td><td>Boilerplate listed apart, marked not checked</td></tr>
+          <tr><td>Treat French as tested</td><td>English today; French support is being built</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section--band" aria-labelledby="offer-title">
+    <div class="container offer">
+      <div>
+        <h2 id="offer-title">A free match on your RFP</h2>
+        <div class="actions"><a class="btn" href="mailto:steph@governedai.ca?subject=CVCite%20free%20match">Email steph@governedai.ca</a></div>
+      </div>
+      <dl>
+        <div><dt>You send</dt><dd>One RFP and one CV, with names, phone numbers and clearance details removed.</dd></div>
+        <div><dt>You get</dt><dd>The grid, its gaps and the record of every checked sentence.</dd></div>
+        <div><dt>Processing</dt><dd>The text passes through Anthropic’s API, in the United States.</dd></div>
+        <div><dt>Afterwards</dt><dd>Both files are deleted <span class="fill" data-fill="retention">within a set number of days</span> of delivery.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__line">An RFP to try? <a href="mailto:steph@governedai.ca">steph@governedai.ca</a></p>
+    <ul class="footer__links">
+      <li><a href="/cvcite/sample-grid/">Sample grid</a></li>
+      <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+    </ul>
+    <p class="footer__legal">GovernedAI, Ottawa. The sample grid uses CanadaBuys notice <a href="https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/pw-17-00785583">1000190326</a> and contains information licensed under the <a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence, Canada</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

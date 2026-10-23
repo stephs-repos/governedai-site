@@ -1,0 +1,1 @@
+hallmark 7ec8682 from https://github.com/nutlope/hallmark (MIT), copied by hand on 2026-10-23; install.mjs, install-hook.mjs and imagegen.mjs not run.
