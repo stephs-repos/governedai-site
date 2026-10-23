@@ -18,7 +18,7 @@
   <nav class="nav__pill" aria-label="Principal">
     <a class="wordmark" href="/" aria-label="Accueil GovernedAI">GovernedAI <span>CVCite</span></a>
     <ul class="nav__links">
-      <li><a href="/cvcite/sample-grid/" hreflang="en" lang="en">Grille d’exemple</a></li>
+      <li><a href="/fr/cvcite/grille-exemple/">Grille d’exemple</a></li>
       <li><a href="/" hreflang="en" lang="en">English</a></li>
       <li><a class="btn" href="mailto:info@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse</a></li>
     </ul>
@@ -33,27 +33,27 @@
         <p class="lead">CVCite confronte un CV à un appel d’offres et signale chaque lacune.</p>
         <div class="actions">
           <a class="btn btn--primary" href="mailto:info@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse gratuite</a>
-          <a class="btn" href="/cvcite/sample-grid/" hreflang="en">Voir la grille d’exemple</a>
+          <a class="btn" href="/fr/cvcite/grille-exemple/">Voir la grille d’exemple</a>
         </div>
       </div>
 
       <figure class="sheet" aria-labelledby="sheet-title">
         <div class="sheet__head">
           <h2 id="sheet-title">Six critères obligatoires, un CV</h2>
-          <p><span class="num">18,1</span>&nbsp;s</p>
+          <p><span class="num">24,3</span>&nbsp;s</p>
         </div>
         <table class="verdicts">
           <thead><tr><th scope="col">Critère</th><th scope="col">Exige</th><th scope="col">Verdict</th><th scope="col">Pourquoi</th></tr></thead>
           <tbody>
-            <tr><td class="id">M01</td><td class="what">Deux ressources proposées</td><td><span class="chip chip--not">Non appuyé</span></td><td>vise la soumission</td></tr>
-            <tr><td class="id">M02</td><td class="what">Un diplôme en droit et un diplôme en traduction</td><td><span class="chip chip--gap">Lacune</span></td><td>un certificat, pas un diplôme</td></tr>
-            <tr><td class="id">M03</td><td class="what">Attestation ou relevés de notes</td><td><span class="chip chip--gap">Lacune</span></td><td>à joindre</td></tr>
-            <tr><td class="id">M04</td><td class="what">Cinq ans de traduction</td><td><span class="chip chip--met">Appuyé</span></td><td><span class="num">6</span> passages cités</td></tr>
-            <tr><td class="id">M05</td><td class="what">Terminologie des revendications territoriales</td><td><span class="chip chip--met">Appuyé</span></td><td><span class="num">3</span> passages cités</td></tr>
-            <tr><td class="id">M06</td><td class="what">L’annexe G signée</td><td><span class="chip chip--not">Non appuyé</span></td><td>formulaire à signer</td></tr>
+            <tr><td class="id">O01</td><td class="what">Un diplôme en droit et un diplôme en traduction</td><td><span class="chip chip--gap">Lacune</span></td><td>un certificat, pas un diplôme</td></tr>
+            <tr><td class="id">O02</td><td class="what">Attestation ou relevés de notes</td><td><span class="chip chip--gap">Lacune</span></td><td>à joindre</td></tr>
+            <tr><td class="id">O03</td><td class="what">Cinq ans de traduction</td><td><span class="chip chip--met">Appuyé</span></td><td><span class="num">8</span> passages cités</td></tr>
+            <tr><td class="id">O04</td><td class="what">Terminologie et textes juridiques</td><td><span class="chip chip--gap">Lacune</span></td><td>« au moins » à évaluer</td></tr>
+            <tr><td class="id">O05</td><td class="what">Deux exemples de texte de 2&nbsp;000 mots</td><td><span class="chip chip--gap">Lacune</span></td><td>à joindre</td></tr>
+            <tr><td class="id">O06</td><td class="what">L’annexe G signée</td><td><span class="chip chip--not">Non appuyé</span></td><td>formulaire à signer</td></tr>
           </tbody>
         </table>
-        <figcaption class="sheet__foot">Consultante fictive, comparée à l’avis CanadaBuys <span class="num">1000190326</span>. <a href="/cvcite/sample-grid/" hreflang="en">La grille complète</a> (en anglais).</figcaption>
+        <figcaption class="sheet__foot">CV fictif en français, comparé à l’avis AchatsCanada <span class="num">1000190326</span> en français. <a href="/fr/cvcite/grille-exemple/">La grille complète</a>.</figcaption>
       </figure>
     </div>
   </section>
@@ -77,14 +77,14 @@
     <div class="container">
       <div class="head">
         <h2 id="cited-title">Chaque phrase renvoie à sa ligne</h2>
-        <p class="lead">Les réponses n’utilisent que les passages du CV, numérotés et cités.</p>
+        <p class="lead">Les réponses ne citent que des passages numérotés du CV.</p>
       </div>
       <figure class="capture">
         <div class="capture__frame" data-kind="product">
-          <img src="/images/screens/grid-case.png" width="1385" height="425" loading="lazy" lang="en"
-               alt="Ligne M04 de la grille d’exemple, marquée Supported : trois phrases rédigées avec des renvois numérotés, six passages du CV cités, et chaque exigence cochée en regard des paragraphes qui la démontrent.">
+          <img src="/images/screens/grille-cas.png" width="1383" height="539" loading="lazy"
+               alt="Ligne O03 de la grille d’exemple, marquée Appuyé : trois phrases rédigées avec des renvois numérotés, huit passages du CV cités, et chaque exigence cochée en regard des paragraphes qui la démontrent.">
         </div>
-        <figcaption>M04 dans la grille d’exemple : six passages cités derrière trois phrases.</figcaption>
+        <figcaption>O03 dans la grille d’exemple : huit passages cités derrière trois phrases.</figcaption>
       </figure>
     </div>
   </section>
@@ -96,15 +96,16 @@
         <ul class="todo">
           <li><b>Un diplôme en traduction</b><span>le CV montre un certificat</span></li>
           <li><b>Attestation ou relevés de notes</b><span>à joindre à la soumission</span></li>
+          <li><b>Deux exemples de texte</b><span>au moins 2&nbsp;000 mots chacun</span></li>
           <li><b>L’annexe G signée</b><span>remplir le formulaire</span></li>
         </ul>
       </div>
       <figure class="capture">
         <div class="capture__frame" data-kind="product">
-          <img src="/images/screens/grid-gaps.png" width="750" height="165" loading="lazy" lang="en"
-               alt="Ligne M02 de la grille d’exemple : le dossier ne montre pas de diplôme en traduction; le diplôme en droit est démontré par le paragraphe 20; deux formules types sont indiquées comme non vérifiées.">
+          <img src="/images/screens/grille-lacunes.png" width="946" height="176" loading="lazy"
+               alt="Ligne O01 de la grille d’exemple : le dossier ne montre pas de diplôme en traduction; le diplôme en droit est démontré par le paragraphe 20; deux formules types sont indiquées comme non vérifiées.">
         </div>
-        <figcaption>M02 : la raison, puis chaque exigence.</figcaption>
+        <figcaption>O01 : la raison, puis chaque exigence.</figcaption>
       </figure>
     </div>
   </section>
@@ -116,10 +117,10 @@
         <p class="lead">Le modèle lit. Le code applique les règles.</p>
       </div>
       <ul class="rows">
-        <li><h3>Les critères, mot pour mot</h3><p>Chaque critère est copié de l’appel d’offres et vérifié sur sa page.</p></li>
-        <li><h3>Une recherche par élément</h3><p>Chaque élément d’un critère a sa propre recherche.</p></li>
-        <li><h3>Démontré, ou une lacune</h3><p>Une exigence compte si le CV l’énonce ou si le travail décrit la prouve.</p></li>
-        <li><h3>Chaque phrase vérifiée</h3><p>bearout vérifie chaque phrase contre son passage; un échec est réécrit une fois ou retiré.</p></li>
+        <li><h3>Les critères, mot pour mot</h3><p>Copié de l’appel d’offres, vérifié sur sa page.</p></li>
+        <li><h3>Une recherche par élément</h3><p>Chaque élément est cherché à part.</p></li>
+        <li><h3>Démontré, ou une lacune</h3><p>Une exigence compte si le CV l’énonce ou si le travail la prouve.</p></li>
+        <li><h3>Chaque phrase vérifiée</h3><p>bearout vérifie chaque phrase; un échec est réécrit une fois ou retiré.</p></li>
       </ul>
     </div>
   </section>
@@ -136,7 +137,7 @@
           <tr><td>Affirmer une expérience que le CV ne montre pas</td><td>Non appuyé, avec la raison</td></tr>
           <tr><td>Compter un certificat comme un diplôme</td><td>Une lacune qui nomme le titre manquant</td></tr>
           <tr><td>Cacher une phrase qu’il a retirée</td><td>La phrase, son passage et la réécriture tentée</td></tr>
-          <tr><td>Traiter le français comme éprouvé</td><td>L’anglais aujourd’hui; le soutien du français est en cours</td></tr>
+          <tr><td>Traiter le français comme éprouvé</td><td>Le français en bêta, signalé sur la grille</td></tr>
         </tbody>
       </table>
     </div>
@@ -162,11 +163,11 @@
   <div class="container">
     <p class="footer__line">Un appel d’offres à essayer? <a href="mailto:info@governedai.ca">info@governedai.ca</a></p>
     <ul class="footer__links">
-      <li><a href="/cvcite/sample-grid/" hreflang="en" lang="en">Grille d’exemple</a></li>
+      <li><a href="/fr/cvcite/grille-exemple/">Grille d’exemple</a></li>
       <li><a href="/" hreflang="en" lang="en">English</a></li>
       <li><a href="/privacy/" hreflang="en" lang="en">Confidentialité</a></li>
     </ul>
-    <p class="footer__legal">GovernedAI, Ottawa. La grille d’exemple utilise l’avis CanadaBuys <a href="https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/pw-17-00785583">1000190326</a> et contient des renseignements visés par la <a href="https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada">Licence du gouvernement ouvert, Canada</a>.</p>
+    <p class="footer__legal">GovernedAI, Ottawa. La grille d’exemple utilise l’avis AchatsCanada <a href="https://canadabuys.canada.ca/fr/occasions-de-marche/appels-d-offres/pw-17-00785583">1000190326</a> et contient des renseignements visés par la <a href="https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada">Licence du gouvernement ouvert, Canada</a>.</p>
   </div>
 </footer>
 </body>
