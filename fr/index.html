@@ -26,24 +26,119 @@
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="fr-title">
-    <div class="container">
-      <h1 id="fr-title">Chaque critère, appuyé par le CV.</h1>
-      <p class="lead">CVCite confronte un CV à un appel d’offres et signale chaque lacune.</p>
-      <div class="actions">
-        <a class="btn btn--primary" href="mailto:steph@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse gratuite</a>
-        <a class="btn" href="/cvcite/sample-grid/" hreflang="en">Voir la grille d’exemple</a>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div>
+        <h1 id="hero-title">Chaque critère, appuyé par le CV.</h1>
+        <p class="lead">CVCite confronte un CV à un appel d’offres et signale chaque lacune.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="mailto:steph@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse gratuite</a>
+          <a class="btn" href="/cvcite/sample-grid/" hreflang="en">Voir la grille d’exemple</a>
+        </div>
       </div>
+
+      <figure class="sheet" aria-labelledby="sheet-title">
+        <div class="sheet__head">
+          <h2 id="sheet-title">Six critères obligatoires, un CV</h2>
+          <p><span class="num">18,1</span>&nbsp;s</p>
+        </div>
+        <table class="verdicts">
+          <thead><tr><th scope="col">Critère</th><th scope="col">Exige</th><th scope="col">Verdict</th><th scope="col">Pourquoi</th></tr></thead>
+          <tbody>
+            <tr><td class="id">M01</td><td class="what">Deux ressources proposées</td><td><span class="chip chip--not">Non appuyé</span></td><td>vise la soumission</td></tr>
+            <tr><td class="id">M02</td><td class="what">Un diplôme en droit et un diplôme en traduction</td><td><span class="chip chip--gap">Lacune</span></td><td>un certificat, pas un diplôme</td></tr>
+            <tr><td class="id">M03</td><td class="what">Attestation ou relevés de notes</td><td><span class="chip chip--gap">Lacune</span></td><td>à joindre</td></tr>
+            <tr><td class="id">M04</td><td class="what">Cinq ans de traduction</td><td><span class="chip chip--met">Appuyé</span></td><td><span class="num">6</span> passages cités</td></tr>
+            <tr><td class="id">M05</td><td class="what">Terminologie des revendications territoriales</td><td><span class="chip chip--met">Appuyé</span></td><td><span class="num">3</span> passages cités</td></tr>
+            <tr><td class="id">M06</td><td class="what">L’annexe G signée</td><td><span class="chip chip--not">Non appuyé</span></td><td>formulaire à signer</td></tr>
+          </tbody>
+        </table>
+        <figcaption class="sheet__foot">Consultante fictive, comparée à l’avis CanadaBuys <span class="num">1000190326</span>. <a href="/cvcite/sample-grid/" hreflang="en">La grille complète</a> (en anglais).</figcaption>
+      </figure>
     </div>
   </section>
-  <section class="section--tight" aria-labelledby="fr-offer">
+
+  <section class="section" aria-labelledby="cited-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="cited-title">Chaque phrase renvoie à sa ligne</h2>
+        <p class="lead">Les réponses n’utilisent que les passages du CV, numérotés et cités.</p>
+      </div>
+      <figure class="capture">
+        <div class="capture__frame" data-kind="product">
+          <img src="/images/screens/grid-case.png" width="1385" height="425" loading="lazy" lang="en"
+               alt="Ligne M04 de la grille d’exemple, marquée Supported : trois phrases rédigées avec des renvois numérotés, six passages du CV cités, et chaque exigence cochée en regard des paragraphes qui la démontrent.">
+        </div>
+        <figcaption>M04 dans la grille d’exemple : six passages cités derrière trois phrases.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="gaps-title">
+    <div class="container split">
+      <div>
+        <h2 id="gaps-title">Des lacunes à combler avant de soumissionner</h2>
+        <ul class="todo">
+          <li><b>Un diplôme en traduction</b><span>le CV montre un certificat</span></li>
+          <li><b>Attestation ou relevés de notes</b><span>à joindre à la soumission</span></li>
+          <li><b>L’annexe G signée</b><span>remplir le formulaire</span></li>
+        </ul>
+      </div>
+      <figure class="capture">
+        <div class="capture__frame" data-kind="product">
+          <img src="/images/screens/grid-gaps.png" width="750" height="165" loading="lazy" lang="en"
+               alt="Ligne M02 de la grille d’exemple : le dossier ne montre pas de diplôme en traduction; le diplôme en droit est démontré par le paragraphe 20; deux formules types sont indiquées comme non vérifiées.">
+        </div>
+        <figcaption>M02 : la raison, puis chaque exigence et son paragraphe.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="how-title">Comment un verdict est rendu</h2>
+        <p class="lead">Le modèle lit. Le code applique les règles.</p>
+      </div>
+      <ul class="rows">
+        <li><h3>Les critères, mot pour mot</h3><p>Chaque critère est copié de l’appel d’offres et vérifié sur sa page.</p></li>
+        <li><h3>Une recherche par élément</h3><p>Chaque élément d’un critère a sa propre recherche.</p></li>
+        <li><h3>Démontré, ou une lacune</h3><p>Une exigence compte si le CV l’énonce ou si le travail décrit la prouve.</p></li>
+        <li><h3>Chaque phrase vérifiée</h3><p>bearout vérifie chaque phrase contre son passage; un échec est réécrit une fois ou retiré.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="refuse-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="refuse-title">Ce qu’il refuse de faire</h2>
+        <p class="lead">Là où un outil devinerait, la grille nomme la lacune.</p>
+      </div>
+      <table class="refuse">
+        <thead><tr><th scope="col">Il ne va pas</th><th scope="col">Vous voyez plutôt</th></tr></thead>
+        <tbody>
+          <tr><td>Affirmer une expérience que le CV ne montre pas</td><td>Non appuyé, avec la raison</td></tr>
+          <tr><td>Compter un certificat comme un diplôme</td><td>Une lacune qui nomme le titre manquant</td></tr>
+          <tr><td>Cacher une phrase qu’il a retirée</td><td>La phrase, son passage et la réécriture tentée</td></tr>
+          <tr><td>Évaluer une formule type comme une exigence</td><td>La formule listée à part, marquée non vérifiée</td></tr>
+          <tr><td>Traiter le français comme éprouvé</td><td>L’anglais aujourd’hui; le soutien du français est en cours</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section--band" aria-labelledby="offer-title">
     <div class="container offer">
-      <h2 id="fr-offer">Une analyse gratuite</h2>
+      <div>
+        <h2 id="offer-title">Une analyse gratuite de votre appel d’offres</h2>
+        <div class="actions"><a class="btn" href="mailto:steph@governedai.ca?subject=CVCite%20analyse%20gratuite">Écrire à steph@governedai.ca</a></div>
+      </div>
       <dl>
-        <div><dt>Langue</dt><dd>CVCite traite aujourd’hui les documents en anglais. Le soutien du français est en cours.</dd></div>
         <div><dt>Vous envoyez</dt><dd>Un appel d’offres et un CV, sans noms, numéros de téléphone ni cotes de sécurité.</dd></div>
         <div><dt>Vous recevez</dt><dd>La grille, ses lacunes et le registre de chaque phrase vérifiée.</dd></div>
         <div><dt>Traitement</dt><dd>Le texte passe par l’API d’Anthropic, aux États-Unis.</dd></div>
+        <div><dt>Ensuite</dt><dd>Les deux fichiers sont supprimés <span class="fill" data-fill="retention">dans un nombre de jours à préciser</span> après la livraison.</dd></div>
       </dl>
     </div>
   </section>
