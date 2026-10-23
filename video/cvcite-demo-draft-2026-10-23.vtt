@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.470
+A federal RFP sets out the criteria every consultant is measured against. Matching a CV to them, line by line, is slow and careful work.
+
+2
+00:00:10.720 --> 00:00:18.330
+AI can draft the answers. The risk is a sentence that reads well, but isn't in the CV.
+
+3
+00:00:18.580 --> 00:00:26.670
+CVCite drafts each answer from the CV alone, cites the line it came from, and flags every gap.
+
+4
+00:00:26.920 --> 00:00:37.630
+Here is a real run: a CanadaBuys translation notice, and a consultant we invented for this demo. Six criteria, checked in eighteen seconds.
+
+5
+00:00:37.880 --> 00:00:46.830
+Where the CV meets a criterion, the answer quotes it. Five years of translation: each sentence points to the lines that back it.
+
+6
+00:00:47.080 --> 00:00:54.130
+Underneath, each requirement is ticked against its evidence, so a reviewer can check the reasoning.
+
+7
+00:00:54.380 --> 00:01:04.610
+Where it doesn't, the grid says so. This criterion asks for a translation degree. The CV shows a certificate, and a certificate is not a degree.
+
+8
+00:01:04.860 --> 00:01:13.910
+Two more are paperwork: transcripts to attach, and a form to sign. Things to fix before you bid, not after.
+
+9
+00:01:14.160 --> 00:01:28.050
+Before any sentence reaches the grid, a separate checker tests it against the passage it cites. One that fails is rewritten once, or removed. In this run, all eight sentences passed.
+
+10
+00:01:28.300 --> 00:01:35.690
+Send us one RFP and one CV, with names and clearance details removed, and we'll run a free match.
+
+11
+00:01:35.940 --> 00:01:41.450
+CVCite, by GovernedAI. Every criterion, cited from the CV.
