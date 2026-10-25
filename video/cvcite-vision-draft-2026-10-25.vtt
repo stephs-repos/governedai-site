@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.790
+A staffing firm with a few thousand CVs gets a federal RFP. Somewhere in that pile are the right people. Finding them, and proving it, is the work.
+
+2
+00:00:11.040 --> 00:00:18.010
+This is a tour of where CVCite is going. One part of it exists today, and we'll start there.
+
+3
+00:00:18.260 --> 00:00:29.850
+The grid takes one RFP and one CV and answers every criterion from the CV alone. Each sentence cites the line it came from. Where the CV falls short, it says so.
+
+4
+00:00:30.100 --> 00:00:46.750
+A citation says where a sentence came from. Before any sentence reaches you, a separate checker goes further and tests whether it is true to the passage it cites. A sentence that fails is rewritten once, or removed. No invented experience gets through.
+
+5
+00:00:47.000 --> 00:01:00.750
+Now the plan. Your CVs go into a bench. Names and contact details are removed first, and every CV is checked for bid-readiness as it arrives: dates to the month, clients named, clearances current.
+
+6
+00:01:01.000 --> 00:01:15.390
+Your superlists come in as they are: the consultants you have vetted, by specialty. The system never adds anyone to a list. It proposes people whose work fits, flags members whose CV has gone stale, and you decide.
+
+7
+00:01:15.640 --> 00:01:28.030
+When an RFP comes in, every consultant is checked against every criterion. A common skill might match hundreds of people; the bench shows how many, and ranks them by months of experience and how recent it is.
+
+8
+00:01:28.280 --> 00:01:40.990
+Or just ask. Who has done database migration work for the federal public service in the last five years? The system reads the question back, finds the people, and shows the passage that proves each one.
+
+9
+00:01:41.240 --> 00:01:53.090
+And the whole bench on one page: who is bid-ready in each category and level, who needs a fix, and where the roster is thin against the bids you chase, so recruiting knows where to look.
+
+10
+00:01:53.340 --> 00:02:05.090
+From the RFP, CVCite pulls the criteria and the scope, proposes the resources, and fills your chase list. Each consultant gets a brief that says exactly what their CV must show.
+
+11
+00:02:05.340 --> 00:02:17.510
+When the CVs come back, the grid runs for each one, and the results fill the solicitation's own response tables. Every cell traces to a checked sentence, with the record behind your certification.
+
+12
+00:02:17.760 --> 00:02:30.890
+It can run in our Azure tenant in Canada, or in yours. The AI models plug in: today Anthropic; a model hosted in Canada is an option, so your data can stay in the country end to end.
+
+13
+00:02:31.140 --> 00:02:42.570
+To be clear about where things stand: the grid and the checker are built. The bench, the matching, the questions, the chase list and the proposals are the plan, and we would build them with you.
+
+14
+00:02:42.820 --> 00:02:47.130
+CVCite, by GovernedAI. Knowing who you have, and who you need.
