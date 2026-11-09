@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security: GovernedAI</title>
+<meta name="description" content="Where GovernedAI keeps client data, who processes it, how it is protected, and how to report a security problem.">
+<link rel="alternate" hreflang="fr" href="/fr/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&family=Red+Hat+Text:wght@400;500&family=Red+Hat+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <nav class="nav__pill" aria-label="Main">
+    <a class="wordmark" href="/" aria-label="GovernedAI home">GovernedAI <span>CVCite</span></a>
+    <ul class="nav__links">
+      <li><a href="/cvcite/sample-grid/">Sample grid</a></li>
+      <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+      <li><a class="btn" href="mailto:info@governedai.ca?subject=CVCite%20free%20match">Ask for a free match</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="security-title">
+    <div class="container">
+      <h1 id="security-title">Security</h1>
+      <p class="lead">Where client data is kept, who processes it, how it is protected, and how to tell us about a problem.</p>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="residency-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="residency-title">Where data is kept</h2>
+      </div>
+      <ul class="rows">
+        <li><h3 class="row-title">Client data</h3><p>Stored on Microsoft Azure in Canada Central (Toronto). Copies of the database backups and of stored files are kept in Canada East (Quebec City), so the service can be restored if Canada Central is unavailable.</p></li>
+        <li><h3 class="row-title">Staff sign-in</h3><p>The sign-in identities of our own staff (names, work emails and multi-factor authentication registrations) are held by Microsoft Entra ID in Microsoft’s North America data location, which may be in the United States. A tenant’s data location is fixed when it is created. No CV or consultant record is held there. If a client’s own users sign in to CVCite, their sign-in identities are held there in the same way.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="subprocessors-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="subprocessors-title">Sub-processors</h2>
+      </div>
+      <ul class="rows">
+        <li><h3 class="row-title">Microsoft Azure</h3><p>Hosting, database, file storage, keys and backups, in Canada. Staff sign-in through Microsoft Entra ID, as above.</p></li>
+        <li><h3 class="row-title">Anthropic</h3><p>The AI model provider, used only for CVCite’s AI features: a free match and the hosted beta that builds the grid. Requests are processed in the United States. We have applied for zero data retention; it has not been granted. No client data from a discovery engagement is sent to it.</p></li>
+        <li><h3 class="row-title">Zoho Mail</h3><p>Email to info@governedai.ca, including any files sent with it, in Zoho’s Canadian data centre.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="measures-title">
+    <div class="container">
+      <div class="head">
+        <h2 id="measures-title">How it is protected</h2>
+      </div>
+      <ul class="rows">
+        <li><h3 class="row-title">Private networking</h3><p>The service runs as jobs with no public endpoint, and the database is reachable only on a private network.</p></li>
+        <li><h3 class="row-title">Encryption</h3><p>All data is encrypted at rest, and in transit with TLS, including connections to the database.</p></li>
+        <li><h3 class="row-title">Access</h3><p>Multi-factor authentication is required on every staff account. Access to the environment is granted through Microsoft Entra roles.</p></li>
+        <li><h3 class="row-title">Backups</h3><p>Backups allow a restore to any point in the last 35 days. We test a restore at least every three months, starting before the first client data is stored.</p></li>
+        <li><h3 class="row-title">Deletion</h3><p>Deleted data leaves the backups, and their copies in Canada East, within 35 days.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="disclosure-title">
+    <div class="container">
+      <ul class="rows">
+        <li><h2 class="row-title" id="disclosure-title">Reporting a security problem</h2><p>Write to <a href="mailto:info@governedai.ca?subject=Security%20report">info@governedai.ca</a> with “Security report” in the subject. Please give us a chance to fix the problem before you make it public.</p></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__line">An RFP to try? <a href="mailto:info@governedai.ca">info@governedai.ca</a></p>
+    <ul class="footer__links">
+      <li><a href="/cvcite/sample-grid/">Sample grid</a></li>
+      <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/security/">Security</a></li>
+    </ul>
+    <p class="footer__legal">GovernedAI, Ottawa. The sample grid uses CanadaBuys notice <a href="https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/pw-17-00785583">1000190326</a> and contains information licensed under the <a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence, Canada</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
