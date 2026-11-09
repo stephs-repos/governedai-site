@@ -8,28 +8,31 @@
 <link rel="alternate" hreflang="fr" href="/fr/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&family=Red+Hat+Text:wght@400;500&family=Red+Hat+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav">
-  <nav class="nav__pill" aria-label="Main">
-    <a class="wordmark" href="/" aria-label="GovernedAI home">GovernedAI <span>CVCite</span></a>
-    <ul class="nav__links">
-      <li><a href="/cvcite/sample-grid/">Sample grid</a></li>
-      <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
-      <li><a class="btn" href="mailto:info@governedai.ca?subject=CVCite%20free%20match">Ask for a free match</a></li>
-    </ul>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="wm-lockup" href="/" aria-label="CVCite home"><span class="wm"><b>CV</b>Cite</span><span class="wm-by">by GovernedAI</span></a>
+    <nav aria-label="Main">
+      <ul class="site-nav">
+        <li><a href="/cvcite/sample-grid/">Sample grid</a></li>
+        <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+        <li><a class="btn btn--primary" href="mailto:info@governedai.ca?subject=CVCite%20free%20match">Ask for a free match</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main id="main">
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero__grid">
       <div>
-        <h1 id="hero-title">Every criterion, cited from the CV.</h1>
+        <h1 id="hero-title">Every criterion, cited from the CV</h1>
         <p class="lead">CVCite checks a consultant’s CV against an RFP and flags every gap.</p>
         <div class="actions">
           <a class="btn btn--primary" href="mailto:info@governedai.ca?subject=CVCite%20free%20match">Ask for a free match</a>
@@ -113,14 +116,14 @@
     <div class="container">
       <div class="head">
         <h2 id="how-title">How a verdict is reached</h2>
-        <p class="lead">The model reads. Code applies the rules.</p>
+        <p class="lead">A language model finds the CV passages. Fixed rules decide each verdict.</p>
       </div>
-      <ul class="rows">
+      <ol class="rows steps">
         <li><h3>The criteria, word for word</h3><p>Copied from the RFP, checked against its page.</p></li>
         <li><h3>A search for every part</h3><p>Each part of a criterion is searched separately.</p></li>
         <li><h3>Shown, or a gap</h3><p>A requirement counts only when a CV passage states it or the work it describes proves it.</p></li>
         <li><h3>Every sentence checked</h3><p>bearout tests each sentence; a failure is rewritten once or removed.</p></li>
-      </ul>
+      </ol>
     </div>
   </section>
 
@@ -128,7 +131,6 @@
     <div class="container">
       <div class="head">
         <h2 id="refuse-title">What it will not do</h2>
-        <p class="lead">Where a tool would guess, the grid names the gap.</p>
       </div>
       <table class="refuse">
         <thead><tr><th scope="col">It will not</th><th scope="col">You see instead</th></tr></thead>
