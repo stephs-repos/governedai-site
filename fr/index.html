@@ -8,28 +8,33 @@
 <link rel="alternate" hreflang="en" href="/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&family=Red+Hat+Text:wght@400;500&family=Red+Hat+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 
-<header class="nav">
-  <nav class="nav__pill" aria-label="Principal">
-    <a class="wordmark" href="/" aria-label="Accueil GovernedAI">GovernedAI <span>CVCite</span></a>
-    <ul class="nav__links">
-      <li><a href="/fr/cvcite/grille-exemple/">Grille d’exemple</a></li>
-      <li><a href="/" hreflang="en" lang="en">English</a></li>
-      <li><a class="btn" href="mailto:info@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse</a></li>
-    </ul>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="wm-lockup" href="/fr/" aria-label="Accueil CVCite"><span class="wm"><b>CV</b>Cite</span><span class="wm-by">par GovernedAI</span></a>
+    <nav aria-label="Principal">
+      <ul class="site-nav">
+        <li><a href="/fr/cvcite/grille-exemple/">Grille d’exemple</a></li>
+        <li><a href="/" hreflang="en" lang="en">English</a></li>
+        <li><a class="btn btn--primary" href="mailto:info@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main id="main">
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero__grid">
       <div>
-        <h1 id="hero-title">Chaque critère, appuyé par le CV.</h1>
+        <h1 id="hero-title">Chaque critère, appuyé par le CV</h1>
         <p class="lead">CVCite confronte un CV à un appel d’offres et signale chaque lacune.</p>
         <div class="actions">
           <a class="btn btn--primary" href="mailto:info@governedai.ca?subject=CVCite%20analyse%20gratuite">Demander une analyse gratuite</a>
@@ -114,14 +119,14 @@
     <div class="container">
       <div class="head">
         <h2 id="how-title">Comment un verdict est rendu</h2>
-        <p class="lead">Le modèle lit. Le code applique les règles.</p>
+        <p class="lead">Un modèle de langue trouve les passages du CV. Des règles fixes décident de chaque verdict.</p>
       </div>
-      <ul class="rows">
+      <ol class="rows steps">
         <li><h3>Les critères, mot pour mot</h3><p>Copié de l’appel d’offres, vérifié sur sa page.</p></li>
         <li><h3>Une recherche par élément</h3><p>Chaque élément est cherché à part.</p></li>
         <li><h3>Démontré, ou une lacune</h3><p>Une exigence compte si le CV l’énonce ou si le travail la prouve.</p></li>
         <li><h3>Chaque phrase vérifiée</h3><p>bearout vérifie chaque phrase; un échec est réécrit une fois ou retiré.</p></li>
-      </ul>
+      </ol>
     </div>
   </section>
 
@@ -129,7 +134,6 @@
     <div class="container">
       <div class="head">
         <h2 id="refuse-title">Ce qu’il refuse de faire</h2>
-        <p class="lead">Là où un outil devinerait, la grille nomme la lacune.</p>
       </div>
       <table class="refuse">
         <thead><tr><th scope="col">Il ne va pas</th><th scope="col">Vous voyez plutôt</th></tr></thead>

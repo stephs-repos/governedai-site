@@ -1,8 +1,8 @@
 name: pages
 
 # Publishes the site to GitHub Pages from main. The artifact holds only the site: the vendored
-# hallmark skill (.claude/), its lint log (.hallmark/) and this workflow stay out of the published
-# tree.
+# hallmark skill (.claude/), its lint log (.hallmark/), docs/ (research and the brand handoff)
+# and this workflow stay out of the published tree.
 on:
   push:
     branches: [main]
@@ -28,7 +28,7 @@ jobs:
       - name: Stage the site
         run: |
           mkdir -p _site
-          rsync -a --exclude '.git' --exclude '.github' --exclude '.claude' --exclude '.hallmark' \
+          rsync -a --exclude '.git' --exclude '.github' --exclude '.claude' --exclude '.hallmark' --exclude 'docs' \
                    --exclude '.gitignore' --exclude '_site' --exclude 'node_modules' ./ _site/
           touch _site/.nojekyll
           ls _site

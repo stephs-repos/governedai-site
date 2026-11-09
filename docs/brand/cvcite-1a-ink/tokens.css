@@ -1,0 +1,52 @@
+/* CVCite by GovernedAI — direction 1a "Ink". Drop into governedai-site and bidgrid (cvcite/render/style.py). */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Neutrals (shared with the compliance grid) */
+  --ink: #17202E;
+  --muted: #566171;
+  --rule: #DFE3E8;
+  --canvas: #F3F4F1;
+  --band: #F7F8F6;          /* grid section band, existing */
+  --paper: #FFFFFF;
+  --field: #737D8C;         /* form field border, 3:1 on paper */
+
+  /* Action: no accent. Buttons and links are ink. */
+  --accent: var(--ink);
+  --accent-hover: #2C3747;
+  --on-accent: #FFFFFF;
+  --link: var(--ink);
+  --link-line: #8A93A0;     /* underline colour; hover = currentColor */
+  --focus: var(--ink);      /* 2px outline, 1px offset (site). Grid may keep its own. */
+
+  /* Error (forms, notices only — never a verdict) */
+  --error: #A61B29;
+  --error-bg: #FBEAEB;
+
+  /* Verdicts — unchanged, meaning only, never decoration */
+  --sup: #1A6B43;  --sup-bg: #E3F2EA;
+  --par: #8A5600;  --par-bg: #FBEFD2;
+  --uns: #6B7482;  --uns-ink: #434C59;  --uns-bg: #ECEEF1;
+  --gap: #2B5FB4;  --gap-ink: #234F97;  --gap-bg: #E2EBFA;
+  --cfm: #7A3FB0;  --cfm-ink: #5F2C8C;  --cfm-bg: #F1E8FA;
+
+  /* Type */
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif; /* quoted CV / RFP text only */
+  --mono: "IBM Plex Mono", ui-monospace, monospace;                              /* IDs, notice numbers, timings */
+
+  --fs-h1: 2.5rem;      --lh-h1: 1.15;
+  --fs-h2: 1.625rem;    --lh-h2: 1.25;
+  --fs-h3: 1.1875rem;   --lh-h3: 1.35;
+  --fs-lead: 1.125rem;  --lh-lead: 1.55;
+  --fs-body: 1rem;      --lh-body: 1.55;
+  --fs-small: 0.875rem; --lh-small: 1.5;
+  --fs-caption: 0.8125rem;
+  --fs-pill: 0.75rem;
+  --fw-regular: 400; --fw-medium: 500; --fw-semibold: 600; --fw-bold: 700;
+
+  /* Shape */
+  --radius: 2px;        /* buttons, fields, notices */
+  --radius-pill: 3px;   /* verdict pill (existing grid value) */
+  --shadow: none;
+}
